@@ -1,1 +1,13 @@
+FOR GOAHEAD SERVER
 
+nc -v domain.com 80 # GET / HTTP/1.0
+openssl s_client -connect domain.com:443 # GET / HTTP/1.0
+
+
+https://github.com/nu11pointer/goahead-rce-exploit/tree/main
+
+
+whatweb -a 1 <URL> #Stealthy
+whatweb -a 3 <URL> #Aggresive
+webtech -u <URL>
+webanalyze -host https://google.com -crawl 2
