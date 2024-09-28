@@ -1,0 +1,4 @@
+ Scanning
+
+    ~$ nmap -p 22 --script ssh-enum-algos,ssh-auth-methods,ssh-hostkey,ssh-publickey-acceptance,ssh-run VAR_TARGET_HOST
+
