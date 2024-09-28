@@ -2,3 +2,15 @@
 
     ~$ nmap -p 22 --script ssh-enum-algos,ssh-auth-methods,ssh-hostkey,ssh-publickey-acceptance,ssh-run VAR_TARGET_HOST
 
+
+
+msf > use auxiliary/admin/http/linksys_wrt54gl_exec
+msf auxiliary(linksys_wrt54gl_exec) > show actions
+    ...actions...
+msf auxiliary(linksys_wrt54gl_exec) > set ACTION < action-name >
+msf auxiliary(linksys_wrt54gl_exec) > show options
+    ...show and set options...
+msf auxiliary(linksys_wrt54gl_exec) > run
+
+
+
