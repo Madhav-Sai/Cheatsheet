@@ -1,0 +1,10 @@
+RDP (3389) TCP-
+-Perform enumeration via connecting and checking login screen. Gather all active user’s name and domain/group name.
+
+-Perform RDP cryptography check using RDP-sec-check.pl script.
+
+-Run following nmap script:
+
+· rdp-enum-encryption.nse
+
+· rdp-vuln-ms12-020.nse
