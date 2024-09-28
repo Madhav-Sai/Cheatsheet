@@ -8,3 +8,13 @@ RDP (3389) TCP-
 · rdp-enum-encryption.nse
 
 · rdp-vuln-ms12-020.nse
+
+
+
+`` Password Bruteforcing
+
+    ~$ hydra -V -t 1 -l VAR_USERNAME -P VAR_WORDLIST_PASSWORD rdp://VAR_TARGET_HOST
+
+`` Scanning
+
+    ~$ nmap --script rdp-enum-encryption,rdp-ntlm-info VAR_TARGET_HOST
